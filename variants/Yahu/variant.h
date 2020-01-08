@@ -14,8 +14,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _VARIANT_DWM1001_DEV_
-#define _VARIANT_DWM1001_DEV_
+#ifndef _VARIANT_YAHU_
+#define _VARIANT_YAHU_
 #include "../DWM1001/variant.h"
 
 /** Master clock frequency */
@@ -39,20 +39,13 @@ extern "C"
 #define NUM_ANALOG_OUTPUTS   (0u)
 
 // LEDs
-#define PIN_LEDRT            (22)
-#define PIN_LEDRB            (23)
-#define PIN_LEDG             (24)
-#define PIN_LEDB             (25)
-#define LED_BUILTIN          PIN_LEDRT
-static const uint8_t LED_RED_TOP = PIN_LEDRT ;
-static const uint8_t LED_RED_BOT = PIN_LEDRB ;
+#define PIN_LEDR            (5)
+#define PIN_LEDG            (0)
+#define PIN_LEDB            (3)
+#define LED_BUILTIN         PIN_LEDB
+static const uint8_t LED_RED     = PIN_LEDR ;
 static const uint8_t LED_GREEN   = PIN_LEDG ;
 static const uint8_t LED_BLUE    = PIN_LEDB ;
-
-// Button
-#define PIN_BUTTON           (26)
-
-static const uint8_t BTN = PIN_BUTTON ;
 
 /*
  * Analog pins

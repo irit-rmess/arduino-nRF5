@@ -949,7 +949,54 @@ Sinobit.menu.softdevice.s130.upload.maximum_size=151552
 Sinobit.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
 Sinobit.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_xxaa.ld
 
-DWM1001-DEV.name=decaWave DWM1001 Module Development Board
+
+
+Yahu.name=Yahu
+
+Yahu.upload.tool=sandeepmistry:openocd
+Yahu.upload.protocol=jlink
+Yahu.upload.target=nrf52
+Yahu.upload.maximum_size=524288
+Yahu.upload.setup_command=transport select swd;
+Yahu.upload.use_1200bps_touch=false
+Yahu.upload.wait_for_upload_port=false
+Yahu.upload.native_usb=false
+
+Yahu.bootloader.tool=sandeepmistry:openocd
+
+Yahu.build.mcu=cortex-m4
+Yahu.build.f_cpu=16000000
+Yahu.build.board=YAHU
+Yahu.build.core=nRF5
+Yahu.build.variant=Yahu
+Yahu.build.variant_system_lib=
+Yahu.build.extra_flags=-DNRF52
+Yahu.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
+Yahu.build.ldscript=nrf52_xxaa.ld
+
+Yahu.build.lfclk_flags=-DUSE_LFXO
+
+Yahu.menu.softdevice.none=None
+Yahu.menu.softdevice.none.softdevice=none
+Yahu.menu.softdevice.none.softdeviceversion=
+
+Yahu.menu.softdevice.s132=S132
+Yahu.menu.softdevice.s132.softdevice=s132
+Yahu.menu.softdevice.s132.softdeviceversion=2.0.1
+Yahu.menu.softdevice.s132.upload.maximum_size=409600
+Yahu.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
+Yahu.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
+
+
+
+
+
+
+
+
+
+
+DWM1001-DEV.name=DecaWave DWM1001 Module Development Board
 
 DWM1001-DEV.upload.tool=sandeepmistry:openocd
 DWM1001-DEV.upload.protocol=jlink
