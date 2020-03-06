@@ -21,45 +21,29 @@
 
 const uint32_t g_ADigitalPinMap[] = {
   // D0 - D8
-  12, //0
-  27,
-  23,
-  13,
-  15, // Arduino: 4, DWM1001: pin 23 (à tester)
-  8, // Arduino: 5, DWM1001: pin 25, Yahu!: LED_RED
-  26,
-  6, //6
-  7, //7
-
-  // A0, A1
-  4, //9
-  3, //10
-
-  // SDA, SCL
-  29, //11
-  28, //12
-
-  // RX, TX
-  11, //13
-  5,  //14
-
-  // DWM1000
-  // SPI SS1, MISO1, MOSI1, SCK1
-  17,
-  18,
-  20,
-  16,
-  // RST, IRQ
-  24,
-  19,
-
-  // ACC IRQ
-  25,
-
-  // LEDS
-  9,
-  10,
-
-  // BTN
-  2
+  12, // Arduino pin #0  LED_GREEN
+  27, // Arduino pin #1 
+  23, // Arduino pin #2 
+  13, // Arduino pin #3  LED_BLUE
+  15, // Arduino pin #4  (LoRa shield IRQ)
+  8,  // Arduino pin #5  LED_RED
+  26, // Arduino pin #6  
+  6,  // Arduino pin #7  EXTERNAL SPI MOSI
+  7,  // Arduino pin #8  EXTERNAL SPI MISO
+  4,  // Arduino pin #9  EXTERNAL SPI SCK, A0, AIN2, 
+  3,  // Arduino pin #10 EXTERNAL SPI SS, A1, AIN1, 
+  29, // Arduino pin #11 I2C SDA
+  28, // Arduino pin #12 I2C SCL
+  11, // Arduino pin #13 Serial RX
+  5,  // Arduino pin #14 Serial TX
+  17, // Arduino pin #15 DWM1000 SPI SS1 
+  18, // Arduino pin #16 DWM1000 SPI MISO1
+  20, // Arduino pin #17 DWM1000 SPI MOSI1
+  16, // Arduino pin #18 DWM1000 SPI SCK1 
+  24, // Arduino pin #19 DWM1000 RESET
+  19, // Arduino pin #20 DWM1000 IRQ
+  25, // Arduino pin #21 ACCEL IRQ
+  9,  // Arduino pin #22
+  10, // Arduino pin #23
+  2   // Arduino pin #24
 };
