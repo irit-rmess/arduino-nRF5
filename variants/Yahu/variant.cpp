@@ -45,5 +45,9 @@ const uint32_t g_ADigitalPinMap[] = {
   25, // Arduino pin #21 ACCEL IRQ
   9,  // Arduino pin #22
   10, // Arduino pin #23
-  2   // Arduino pin #24
+  2,  // Arduino pin #24
+  14, // Arduino pin #25
+  31, // Arduino pin #26
+  30, // Arduino pin #27
+  22  // Arduino pin #28
 };
