@@ -21,8 +21,8 @@
 
 const uint32_t g_ADigitalPinMap[] = {
   // D0 - D8
-  12,
-  27,
+  12, // I2C address LSB for accelerometer and barometer in DWM1003
+  27, // CS/I2C enable for magnetometer in DWM1003
   23,
   13,
   15,
@@ -59,8 +59,8 @@ const uint32_t g_ADigitalPinMap[] = {
   // LEDS
   14,
   22,
-  30,
-  31,
+  30, // accelerometer CS/I2C enable in dwm1003
+  31, // barometer CS/I2C enable in dwm1003
 
   // BTN
   2

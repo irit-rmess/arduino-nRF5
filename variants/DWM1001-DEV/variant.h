@@ -54,6 +54,12 @@ static const uint8_t LED_BLUE    = PIN_LEDB ;
 
 static const uint8_t BTN = PIN_BUTTON ;
 
+// DWM1003 peripherals
+#define PIN_DWM1003_I2C_LSB_ACC_BAR (0)
+#define PIN_DWM1003_I2C_ENABLE_MAG  (1)
+#define PIN_DWM1003_I2C_ENABLE_ACC  (24)
+#define PIN_DWM1003_I2C_ENABLE_BAR  (25)
+
 /*
  * Analog pins
  */
