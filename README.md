@@ -80,6 +80,9 @@ Become a sponsor and get your logo on our README on Github with a link to your s
 
 ## Supported boards
 
+### nRF52833
+ * [BBC micro:bit v2](https://microbit.org/new-microbit/)
+
 ### nRF52
  * [Plain nRF52 MCU](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52832)
  * [Nordic Semiconductor nRF52 DK](https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF52-DK)
@@ -192,7 +195,7 @@ The SD consumes ~5k of Ram + some extra based on actual BLE configuration.
   * Linux: ```~/Arduino```
   * Windows: ```~/Documents/Arduino```
  3. Create a folder named ```hardware```, if it does not exist, and change directories to it
- 4. Clone this repo: ```git clone https://github.com/sandeepmistry/arduino-nRF5.git sandeepmistry/nRF5```
+ 4. Clone this repo: ```git clone https://github.com/sandeepmistry/arduino-nRF5.git sandeepmistry-github/nRF5```
  5. Restart the Arduino IDE
 
 ## BLE
