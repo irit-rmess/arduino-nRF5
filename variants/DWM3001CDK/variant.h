@@ -48,7 +48,7 @@ extern "C"
 static const uint8_t GREEN_LED = PIN_LED_GREEN;
 static const uint8_t BLUE_LED = PIN_LED_BLUE;
 static const uint8_t RED_LED_BOT = PIN_LED_RED_TOP;
-static const uint8_t RED_LED_TOP = PIN_LED_RED_TOP;
+static const uint8_t RED_LED_TOP = PIN_LED_RED_BOT;
 
 #define LED_BUILTIN   PIN_LED_GREEN
 
