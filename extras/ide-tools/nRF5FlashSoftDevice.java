@@ -1,4 +1,4 @@
-package com.github.sandeepmistry.arduino.nRF5;
+package com.github.RMESS.arduino.nRF5;
 
 import cc.arduino.packages.Uploader;
 import cc.arduino.packages.uploaders.SerialUploader;
@@ -82,7 +82,7 @@ public class nRF5FlashSoftDevice implements Tool {
     }
 
     String programmer = PreferencesData.get("programmer");
-    if (programmer == null || !programmer.startsWith("sandeepmistry:")) {
+    if (programmer == null || !programmer.startsWith("RMESS:")) {
       editor.statusError("Unsupported programmer!");
       return;
     }
