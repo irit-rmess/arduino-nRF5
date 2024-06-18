@@ -78,8 +78,8 @@ const uint32_t g_ADigitalPinMap[] = {
   NRF_GPIO_PIN_MAP(1,9),   // TRACE DATA 3
 
   // Misc Pins (P5)
-  NRF_GPIO_PIN_MAP(1,14),   // PIN 1
-  NRF_GPIO_PIN_MAP(1,15),   // PIN 3
+  NRF_GPIO_PIN_MAP(1,14),  // PIN 1
+  NRF_GPIO_PIN_MAP(1,15),  // PIN 3
   NRF_GPIO_PIN_MAP(1,13)   // PIN 4 
 
 
