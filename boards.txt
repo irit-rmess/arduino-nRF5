@@ -1,5 +1,6 @@
 # Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
 # Copyright (c) 2016 Sandeep Mistry All right reserved.
+# Copyright (c) 2023 IRIT RMESS All right reserved.
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -1143,7 +1144,7 @@ nRF52840DK.menu.board_variant.standard.compiler.libraries.ldflags_start=
 nRF52840DK.menu.board_variant.standard.compiler.libraries.ldflags_end=
 nRF52840DK.menu.board_variant.standard.build.ldscript=nrf52840_xxaa.ld
 
-nRF52840DK.menu.board_variant.uwbdwt=Qorvo UWB support
+nRF52840DK.menu.board_variant.uwbdwt=Qorvo UWB drivers support
 nRF52840DK.menu.board_variant.uwbdwt.build.extra_flags=-DNRF52840 -DNRF52840_XXAA -DARDUINO_GENERIC -DDWT_UWB_ARDUINO
 nRF52840DK.menu.board_variant.uwbdwt.compiler.libraries.ldflags_start=-Wl,--whole-archive
 nRF52840DK.menu.board_variant.uwbdwt.compiler.libraries.ldflags_end=-Wl,--no-whole-archive
@@ -1230,4 +1231,3 @@ DWM3001-CDK.menu.softdevice.s132.softdeviceversion=2.0.1
 DWM3001-CDK.menu.softdevice.s132.upload.maximum_size=409600
 DWM3001-CDK.menu.softdevice.s132.build.extra_flags=-DNRF52833_XXAA -DS132 -DNRF51_S132 -DDWM3001_CDK
 DWM3001-CDK.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
-
