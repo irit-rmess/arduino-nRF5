@@ -1,5 +1,6 @@
 # Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
 # Copyright (c) 2016 Sandeep Mistry All right reserved.
+# Copyright (c) 2023 IRIT RMESS All right reserved.
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -1053,51 +1054,6 @@ Yahu.menu.softdevice.s132.upload.maximum_size=409600
 Yahu.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
 Yahu.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
 
-
-
-
-
-
-
-
-
-
-DWM1001-DEV.name=DecaWave DWM1001 Module Development Board
-
-DWM1001-DEV.upload.tool=RMESS:openocd
-DWM1001-DEV.upload.protocol=jlink
-DWM1001-DEV.upload.target=nrf52
-DWM1001-DEV.upload.maximum_size=524288
-DWM1001-DEV.upload.setup_command=transport select swd;
-DWM1001-DEV.upload.use_1200bps_touch=false
-DWM1001-DEV.upload.wait_for_upload_port=false
-DWM1001-DEV.upload.native_usb=false
-
-DWM1001-DEV.bootloader.tool=RMESS:openocd
-
-DWM1001-DEV.build.mcu=cortex-m4
-DWM1001-DEV.build.f_cpu=16000000
-DWM1001-DEV.build.board=DWM1001_DEV
-DWM1001-DEV.build.core=nRF5
-DWM1001-DEV.build.variant=DWM1001-DEV
-DWM1001-DEV.build.variant_system_lib=
-DWM1001-DEV.build.extra_flags=-DNRF52
-DWM1001-DEV.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
-DWM1001-DEV.build.ldscript=nrf52_xxaa.ld
-
-DWM1001-DEV.build.lfclk_flags=-DUSE_LFXO
-
-DWM1001-DEV.menu.softdevice.none=None
-DWM1001-DEV.menu.softdevice.none.softdevice=none
-DWM1001-DEV.menu.softdevice.none.softdeviceversion=
-
-DWM1001-DEV.menu.softdevice.s132=S132
-DWM1001-DEV.menu.softdevice.s132.softdevice=s132
-DWM1001-DEV.menu.softdevice.s132.softdeviceversion=2.0.1
-DWM1001-DEV.menu.softdevice.s132.upload.maximum_size=409600
-DWM1001-DEV.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
-DWM1001-DEV.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
-
 SeeedArchLink.name=Seeed Arch Link
 
 SeeedArchLink.upload.tool=RMESS:openocd
@@ -1137,14 +1093,14 @@ SeeedArchLink.menu.softdevice.s130.upload.maximum_size=151552
 SeeedArchLink.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
 SeeedArchLink.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_xxaa.ld
 
-#### NORDIC SEMICONDUCTOR nRF52840DK
+
 
 nRF52840DK.name=nRF52840 DK
 
 nRF52840DK.vid.0=0x1366
 nRF52840DK.pid.0=0x1015
 
-nRF52840DK.upload.tool=RMESS:openocd
+nRF52840DK.upload.tool=sandeepmistry:openocd
 nRF52840DK.upload.protocol=jlink
 nRF52840DK.upload.interface=jlink
 nRF52840DK.upload.target=nrf52
@@ -1154,7 +1110,7 @@ nRF52840DK.upload.use_1200bps_touch=false
 nRF52840DK.upload.wait_for_upload_port=false
 nRF52840DK.upload.native_usb=false
 
-nRF52840DK.bootloader.tool=RMESS:openocd
+nRF52840DK.bootloader.tool=sandeepmistry:openocd
 
 nRF52840DK.build.mcu=cortex-m4
 nRF52840DK.build.f_cpu=16000000
@@ -1173,7 +1129,7 @@ nRF52840DK.menu.softdevice.s132=S132
 nRF52840DK.menu.softdevice.s132.softdevice=s132
 nRF52840DK.menu.softdevice.s132.softdeviceversion=2.0.1
 nRF52840DK.menu.softdevice.s132.upload.maximum_size=409600
-nRF52840DK.menu.softdevice.s132.build.extra_flags=-DS132 -DNRF51_S132 -DNRF52840 -DNRF52840_XXAA
+nRF52840DK.menu.softdevice.s132.build.extra_flags=-DS132 -DNRF51_S132 -DNRF52840 -DNRF52840_XXAA -DARDUINO_GENERIC
 nRF52840DK.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
 
 nRF52840DK.menu.lfclk.lfxo=Crystal Oscillator
@@ -1188,14 +1144,51 @@ nRF52840DK.menu.board_variant.standard.compiler.libraries.ldflags_start=
 nRF52840DK.menu.board_variant.standard.compiler.libraries.ldflags_end=
 nRF52840DK.menu.board_variant.standard.build.ldscript=nrf52840_xxaa.ld
 
-nRF52840DK.menu.board_variant.uwbdwt=Qorvo UWB support
+nRF52840DK.menu.board_variant.uwbdwt=Qorvo UWB drivers support
+nRF52840DK.menu.board_variant.uwbdwt.build.extra_flags=-DNRF52840 -DNRF52840_XXAA -DARDUINO_GENERIC -DDWT_UWB_ARDUINO
 nRF52840DK.menu.board_variant.uwbdwt.compiler.libraries.ldflags_start=-Wl,--whole-archive
 nRF52840DK.menu.board_variant.uwbdwt.compiler.libraries.ldflags_end=-Wl,--no-whole-archive
 nRF52840DK.menu.board_variant.uwbdwt.build.ldscript=nrf52840_xxaa_dwt.ld
 
 
 
-### DWM3001CDK Qorvo
+DWM1001-DEV.name=Qorvo DWM1001-DEV
+
+DWM1001-DEV.upload.tool=RMESS:openocd
+DWM1001-DEV.upload.protocol=jlink
+DWM1001-DEV.upload.target=nrf52
+DWM1001-DEV.upload.maximum_size=524288
+DWM1001-DEV.upload.setup_command=transport select swd;
+DWM1001-DEV.upload.use_1200bps_touch=false
+DWM1001-DEV.upload.wait_for_upload_port=false
+DWM1001-DEV.upload.native_usb=false
+
+DWM1001-DEV.bootloader.tool=RMESS:openocd
+
+DWM1001-DEV.build.mcu=cortex-m4
+DWM1001-DEV.build.f_cpu=16000000
+DWM1001-DEV.build.board=DWM1001_DEV
+DWM1001-DEV.build.core=nRF5
+DWM1001-DEV.build.variant=DWM1001-DEV
+DWM1001-DEV.build.variant_system_lib=
+DWM1001-DEV.build.extra_flags=-DNRF52
+DWM1001-DEV.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
+DWM1001-DEV.build.ldscript=nrf52_xxaa.ld
+
+DWM1001-DEV.build.lfclk_flags=-DUSE_LFXO
+
+DWM1001-DEV.menu.softdevice.none=None
+DWM1001-DEV.menu.softdevice.none.softdevice=none
+DWM1001-DEV.menu.softdevice.none.softdeviceversion=
+
+DWM1001-DEV.menu.softdevice.s132=S132
+DWM1001-DEV.menu.softdevice.s132.softdevice=s132
+DWM1001-DEV.menu.softdevice.s132.softdeviceversion=2.0.1
+DWM1001-DEV.menu.softdevice.s132.upload.maximum_size=409600
+DWM1001-DEV.menu.softdevice.s132.build.extra_flags=-DNRF52 -DS132 -DNRF51_S132
+DWM1001-DEV.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
+
+
 
 DWM3001-CDK.name=Qorvo DWM3001 CDK
 
@@ -1219,7 +1212,7 @@ DWM3001-CDK.build.board=DWM3001_CDK
 DWM3001-CDK.build.core=nRF5
 DWM3001-CDK.build.variant=DWM3001CDK
 DWM3001-CDK.build.variant_system_lib=
-DWM3001-CDK.build.extra_flags=-DNRF52833_XXAA -DARDUINO_GENERIC -DDWM3001_CDK
+DWM3001-CDK.build.extra_flags=-DNRF52833_XXAA -DARDUINO_GENERIC -DDWM3001_CDK -DDWT_UWB_ARDUINO
 DWM3001-CDK.build.float_flags=-mfloat-abi=hard -mfpu=fpv4-sp-d16
 
 DWM3001-CDK.compiler.libraries.ldflags_start=-Wl,--whole-archive
@@ -1238,4 +1231,3 @@ DWM3001-CDK.menu.softdevice.s132.softdeviceversion=2.0.1
 DWM3001-CDK.menu.softdevice.s132.upload.maximum_size=409600
 DWM3001-CDK.menu.softdevice.s132.build.extra_flags=-DNRF52833_XXAA -DS132 -DNRF51_S132 -DDWM3001_CDK
 DWM3001-CDK.menu.softdevice.s132.build.ldscript=armgcc_s132_nrf52832_xxaa.ld
-

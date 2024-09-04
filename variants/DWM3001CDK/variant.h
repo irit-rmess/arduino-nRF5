@@ -1,6 +1,7 @@
 /*
   Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
   Copyright (c) 2016 Sandeep Mistry All right reserved.
+  Copyright (c) 2023 IRIT RMESS All right reserved.
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
   License as published by the Free Software Foundation; either
@@ -49,6 +50,7 @@ static const uint8_t GREEN_LED = PIN_LED_GREEN;
 static const uint8_t BLUE_LED = PIN_LED_BLUE;
 static const uint8_t RED_LED_BOT = PIN_LED_RED_TOP;
 static const uint8_t RED_LED_TOP = PIN_LED_RED_BOT;
+static const uint8_t RED_LED = PIN_LED_RED_BOT;
 
 #define LED_BUILTIN   PIN_LED_GREEN
 
