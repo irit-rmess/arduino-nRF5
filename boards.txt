@@ -540,7 +540,7 @@ CalliopeminiV3.name=Calliope mini V3
 CalliopeminiV3.vid.0=0x0d28
 CalliopeminiV3.pid.0=0x0204
 
-CalliopeminiV3.upload.tool=sandeepmistry:openocd
+CalliopeminiV3.upload.tool=RMESS:openocd
 CalliopeminiV3.upload.protocol=cmsis-dap
 CalliopeminiV3.upload.target=nrf52
 CalliopeminiV3.upload.maximum_size=524288
@@ -549,7 +549,7 @@ CalliopeminiV3.upload.use_1200bps_touch=false
 CalliopeminiV3.upload.wait_for_upload_port=false
 CalliopeminiV3.upload.native_usb=false
 
-CalliopeminiV3.bootloader.tool=sandeepmistry:openocd
+CalliopeminiV3.bootloader.tool=RMESS:openocd
 
 CalliopeminiV3.build.mcu=cortex-m4
 CalliopeminiV3.build.f_cpu=64000000
@@ -1132,7 +1132,7 @@ nRF52840DK.name=nRF52840 DK
 nRF52840DK.vid.0=0x1366
 nRF52840DK.pid.0=0x1015
 
-nRF52840DK.upload.tool=sandeepmistry:openocd
+nRF52840DK.upload.tool=RMESS:openocd
 nRF52840DK.upload.protocol=jlink
 nRF52840DK.upload.interface=jlink
 nRF52840DK.upload.target=nrf52
@@ -1142,7 +1142,7 @@ nRF52840DK.upload.use_1200bps_touch=false
 nRF52840DK.upload.wait_for_upload_port=false
 nRF52840DK.upload.native_usb=false
 
-nRF52840DK.bootloader.tool=sandeepmistry:openocd
+nRF52840DK.bootloader.tool=RMESS:openocd
 
 nRF52840DK.build.mcu=cortex-m4
 nRF52840DK.build.f_cpu=16000000
