@@ -22,6 +22,7 @@ jobs:
           - Generic_nRF51822:chip=xxac
           - Generic_nRF52832
           - Generic_nRF52833
+          - nRF52840DK
           - OSHChip
           - STCT_nRF52_minidev
           - PCA1000X:board_variant=pca10000
@@ -37,6 +38,7 @@ jobs:
           - hackaBLE_v2
           - Sinobit
           - DWM1001-DEV
+          - DWM3001CDK
           - SeeedArchLink
           - Beacon_PCA20006
           - Waveshare_BLE400
@@ -67,11 +69,11 @@ jobs:
           enable-deltas-report: true
           platforms: |
             # First we have to install this core so that the tooling is installed
-            - name: "sandeepmistry:nRF5"
-              source-url: "https://sandeepmistry.github.io/arduino-nRF5/package_nRF5_boards_index.json"
+            - name: "RMESS:nRF5"
+              source-url: "https://locura4iot.irit.fr/decaduino_files/package_RMESS_nRF5boards_index.json"
               version: latest
             # Now, this will overwrite the core source to use the local version
-            - name: "sandeepmistry:nRF5"
+            - name: "RMESS:nRF5"
               source-path: .
-          fqbn: "sandeepmistry:nRF5:${{ matrix.variant }}"
+          fqbn: "RMESS:nRF5:${{ matrix.variant }}"
           sketch-paths: blinky
