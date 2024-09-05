@@ -38,7 +38,7 @@ jobs:
           - hackaBLE_v2
           - Sinobit
           - DWM1001-DEV
-          - DWM3001CDK
+          - DWM3001-CDK
           - SeeedArchLink
           - Beacon_PCA20006
           - Waveshare_BLE400
