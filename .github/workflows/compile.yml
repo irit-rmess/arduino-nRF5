@@ -70,7 +70,7 @@ jobs:
           platforms: |
             # First we have to install this core so that the tooling is installed
             - name: "RMESS:nRF5"
-              source-url: "https://locura4iot.irit.fr/decaduino_files/package_RMESS_nRF5boards_index.json"
+              source-url: "https://irit-rmess.github.io/arduino-nRF5/package_RMESS_nRF5boards_index.json"
               version: latest
             # Now, this will overwrite the core source to use the local version
             - name: "RMESS:nRF5"
