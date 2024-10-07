@@ -161,6 +161,60 @@
               "version": "0.10.0-dev.nrf5"
             }
           ]
+        },
+        {
+          "name": "Nordic Semiconductor nRF5 Boards",
+          "architecture": "nRF5",
+          "version": "0.8.1-RMESS",
+          "category": "Contributed",
+          "url": "https://github.com/irit-rmess/arduino-nRF5/archive/refs/tags/0.8.1-RMESS.tar.gz",
+          "archiveFileName": "arduino-nRF52-0.8.1-RMESS.tar.gz",
+          "checksum": "MD5:d36fedfa7cdc1c8f14e524e3f020fab2",
+          "size": "1495017",
+          "boards": [
+            {"name": "BBC micro:bit"},
+            {"name": "BBC micro:bit v2"},
+            {"name": "Bluz DK"},
+            {"name": "Calliope mini"},
+            {"name": "Calliope mini V3"},
+            {"name": "Electronut labs bluey"},
+            {"name": "Electronut labs hackaBLE"},
+            {"name": "Electronut labs hackaBLE v2"},
+            {"name": "Generic nRF51822"},
+            {"name": "Generic nRF52823"},
+            {"name": "Generic nRF52833"},
+            {"name": "Generic nRF52840DK"},
+            {"name": "OSHChip"},
+            {"name": "ng-beacon"},
+            {"name": "Qorvo DWM1001-DEV"},
+            {"name": "Qorvo DWM3001 CDK"},
+            {"name": "nRF51 Dongle"},
+            {"name": "nRF51822 Development Kit"},
+            {"name": "nRF52 DK"},
+            {"name": "Nordic Beacon Kit"},
+            {"name": "RedBear BLE Nano 2"},
+            {"name": "RedBear Blend 2"},
+            {"name": "RedBearLab BLE Nano"},
+            {"name": "RedBearLab nRF51822"},
+            {"name": "Seeed Arch Link"},
+            {"name": "Sino:bit"},
+            {"name": "Taida Century nRF52 mini board"},
+            {"name": "TinyBLE"},
+            {"name": "Waveshare BLE400"},
+            {"name": "Yahu"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "RMESS",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "RMESS",
+              "name": "openocd",
+              "version": "0.10.0-dev.nrf5"
+            }
+          ]
         }
       ],
       "tools":[
