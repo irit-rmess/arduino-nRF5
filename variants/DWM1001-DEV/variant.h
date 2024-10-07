@@ -40,11 +40,13 @@ extern "C"
 
 // LEDs
 #define PIN_LEDRT            (22)
+#define PIN_LEDR             (22)
 #define PIN_LEDRB            (23)
 #define PIN_LEDG             (24)
 #define PIN_LEDB             (25)
 #define LED_BUILTIN          PIN_LEDRT
 static const uint8_t LED_RED_TOP = PIN_LEDRT ;
+static const uint8_t LED_RED = PIN_LEDR ;
 static const uint8_t LED_RED_BOT = PIN_LEDRB ;
 static const uint8_t LED_GREEN   = PIN_LEDG ;
 static const uint8_t LED_BLUE    = PIN_LEDB ;
