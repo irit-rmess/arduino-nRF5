@@ -45,18 +45,18 @@ extern "C"
 #define PIN_LED_RED_TOP       (2)
 #define PIN_LED_RED_BOT       (3)
 
-static const uint8_t GREEN_LED = PIN_LED_GREEN;
-static const uint8_t BLUE_LED = PIN_LED_BLUE;
-static const uint8_t RED_LED_BOT = PIN_LED_RED_TOP;
-static const uint8_t RED_LED_TOP = PIN_LED_RED_BOT;
+static const uint8_t LED_RED_BOT = PIN_LED_RED_TOP;
+static const uint8_t LED_RED_TOP = PIN_LED_RED_BOT;
+static const uint8_t LED_GREEN = PIN_LED_GREEN;
+static const uint8_t LED_BLUE = PIN_LED_BLUE;
 
-#define LED_BUILTIN   PIN_LED_GREEN
+#define LED_BUILTIN   PIN_LED_RED_TOP
 
 
 // User buttons
 #define PIN_BUTTON      (4)
 
-static const uint8_t USER_BUTTON  = PIN_BUTTON ;
+static const uint8_t BTN  = PIN_BUTTON ;
 
 
 // Serial UART
