@@ -87,8 +87,8 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
       channelMap[ch] = pin;
       callbacksInt[ch] = callback;
 
-      NRF_GPIOTE->CONFIG[ch] &= ~(GPIOTE_CONFIG_PSEL_Msk | GPIOTE_CONFIG_POLARITY_Msk);
-      NRF_GPIOTE->CONFIG[ch] |= ((pin << GPIOTE_CONFIG_PSEL_Pos) & GPIOTE_CONFIG_PSEL_Msk) |
+      NRF_GPIOTE->CONFIG[ch] &= ~(GPIOTE_CONFIG_PORT_PIN_Msk | GPIOTE_CONFIG_POLARITY_Msk);
+      NRF_GPIOTE->CONFIG[ch] |= ((pin << GPIOTE_CONFIG_PSEL_Pos) & GPIOTE_CONFIG_PORT_PIN_Msk) |
                               ((polarity << GPIOTE_CONFIG_POLARITY_Pos) & GPIOTE_CONFIG_POLARITY_Msk);
 
       NRF_GPIOTE->CONFIG[ch] |= GPIOTE_CONFIG_MODE_Event;

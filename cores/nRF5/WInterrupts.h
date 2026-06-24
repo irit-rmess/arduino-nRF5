@@ -34,6 +34,14 @@ extern "C" {
 #define DEFAULT 1
 #define EXTERNAL 0
 
+#if defined(GPIOTE_CONFIG_PORT_Msk) || defined(__NRFX_DOXYGEN__)
+/** @brief Mask for covering port and pin bits in registers. */
+#define GPIOTE_CONFIG_PORT_PIN_Msk (GPIOTE_CONFIG_PORT_Msk | GPIOTE_CONFIG_PSEL_Msk)
+#else
+#define GPIOTE_CONFIG_PORT_PIN_Msk GPIOTE_CONFIG_PSEL_Msk
+#endif
+
+
 typedef void (*voidFuncPtr)(void);
 
 /*
