@@ -23,6 +23,7 @@ Does not require a custom bootloader on the device.
  * [hackaBLE](https://github.com/electronut/ElectronutLabs-hackaBLE)
  * [hackaBLE_v2](https://github.com/electronut/ElectronutLabs-hackaBLE)
  * [DWM1001-DEV](https://www.decawave.com/product/dwm1001-development-board/)
+ * [DWM3001-CDK](https://www.qorvo.com/products/p/DWM3001CDK)
 
 ### nRF51
  * [Plain nRF51 MCU](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF51822)
